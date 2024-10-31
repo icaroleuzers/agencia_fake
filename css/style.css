@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{	
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+
+.navbar{
+	display: flex;
+	flex-flow: row wrap;
+	height: 100px;
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+}
+
+.logo{
+	flex: 20%;
+	margin-left: 10%;
+	text-align: left;
+}
+
+.logo h1{
+	font-family: 'Lobster', cursive;
+	color: #180F4A;
+	font-size: 36px;
+}
+.menu{
+	flex: 70%;
+	text-align: right;
+	padding: 20px;
+}
+
+.menu a{
+	color: #180F4A;
+	text-decoration: none;
+	font-size: 22px;
+	padding: 20px 16px;
+}
+
+.menu a:hover{
+	color: #FF2978;
+	border-top: 4px solid #180F4A;
+
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute; 
+    top: 10px;          
+    right: 10px;  
+}
+
+#botao{
+	background: #180F4A;
+	padding: 10px 25px;
+	color: white;
+	border-radius: 10px;
+	margin-right: 10%;
+	margin-left: 5%;
+}
+
+#botao:hover{
+	border: none;
+	background: #FF2978;
+}
+
+header{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.headline{
+	margin-left: 10%;
+	flex: 40%;
+}
+.headline h2{
+	font-weight: 900;
+	font-size: 22px;
+	color: #180F4A;
+	padding: 0;
+	margin: 0;
+
+}
+
+.headline p{
+	color: gray;
+	text-align: left;
+}
+
+.contact-btn{
+	margin-top: 20px;
+	background: #FF2978;
+	padding: 20px;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 15px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.contact-btn:hover{
+	background: #180F4A;
+}
+
+.menu a.active {
+    color: #FF2978; 
+    font-weight: bold; 
+}
+
+.img-headline{
+	margin-right: 10%;
+	flex: 40%;
+	text-align: center;
+}
+
+section{
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 5%;
+	margin-right: 5%;	
+	text-align: center;
+	padding: 5%;	
+}
+
+section h2{
+	width: 100%;
+	font-size: 50px;
+	margin: 0;
+	font-family: 'Lobster', cursive;
+	font-weight: bold;
+	color: #180F4A;
+}
+
+.servicos{
+	display: inline-block;
+	margin-top: 5%;
+}
+
+.card{
+	display: inline-block;
+	width: 29%;
+	padding: 20px;
+	margin: 1%;
+	border: 1px solid #FF2978;
+	border-radius: 15px;
+}
+
+
+
+.card:hover{
+	background: #FF2978;
+	color: white;
+	padding: 40px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.texto-oculto{
+	display: none;
+}
+
+.card:hover img{
+	display:none;
+	cursor: pointer;
+}
+
+.card:hover .card-text{
+	display: none;
+	cursor: pointer;
+}
+
+.card:hover .texto-oculto{
+	display: block;
+	cursor: pointer;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 120px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #180F4A;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #180F4A;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #FF2978;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit-button {
+    background-color: #180F4A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #FF2978;
+}
+
+.logo-rodape{
+	padding: -20px;
+}
+
+.agencia{
+	font-family: 'Lobster',cursive;
+	color: white;
+	font-size: 40px;
+}
+
+.whats{
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+}
+.whats:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin-bottom: 130px;
+}
+
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    animation: slideDown 0.5s ease;
+}
+
+
+.logo h1 {
+    transition: transform 0.3s ease;
+}
+
+.logo h1:hover {
+    transform: scale(1.1);
+}
+
+
+.menu a {
+    color: #180F4A;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 20px 16px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.menu a:hover {
+    color: #FF2978;
+    border-bottom: 2px solid #FF2978;
+}
+
+.header {
+    padding-top: 120px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.menu a.active {
+    color: #FF2978; 
+    font-weight: bold; 
+}
+
+h2 {
+    font-size: 36px;
+    color: #180F4A;
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease;
+}
+
+p {
+	font-size: 20px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    color: #333;
+    padding: 15px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: none;
+    animation: fadeIn 1s ease;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.service {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease forwards;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.service-title {
+    font-size: 24px;
+    color: #180F4A;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    color: #333;
+    line-height: 1.6;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+footer {
+	margin-top: -20px;
+	height: 220px;
+    background-image: linear-gradient(180deg, #180F4A, #090422, black);
+    text-align: center;
+    border-top: 6px solid #FF2978;
+    animation: fadeIn 1s ease;
+    position: relative; 
+    z-index: 1;
+}
+
+.whats {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: transform 0.3s;
+}
+
+.whats:hover {
+    transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width:1005px){
+	
+	.navbar{
+		position: relative;
+	}
+	.menu{
+		display: none;
+	}
+
+	.logo{
+		margin: 0;
+		text-align: center;
+	}
+
+	.header{
+		padding-top: 50px;
+	}
+
+	.menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 1.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+    }
+    
+    .menu a {
+        color: #333;
+        padding: 10px 0;
+        margin: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu.active {
+        max-height: 500px; 
+        opacity: 1;
+        visibility: visible;
+    }
+
+    
+    .navbar .logo {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+}
+}
+
+	.whats{
+		display: none;
+	}
+
+	.card{
+		width: 100%;
+	}
+}
